@@ -7,22 +7,22 @@ const reports = [
   {
     title: "单摆法测重力加速度",
     date: "2025-04",
-    pdf: "单摆法测重力加速度实验报告.pdf",
+    pdf: "single-pendulum.pdf",
   },
   {
     title: "切变模量",
     date: "2025-05",
-    pdf: "切变模量实验报告.pdf",
+    pdf: "shear-modulus.pdf",
   },
   {
     title: "声速测量",
     date: "2025-06",
-    pdf: "声速测量实验报告.pdf",
+    pdf: "sound-speed.pdf",
   },
   {
     title: "霍尔效应",
     date: "2025-11",
-    pdf: "霍尔效应实验报告.pdf",
+    pdf: "hall-effect.pdf",
   },
 ];
 </script>
