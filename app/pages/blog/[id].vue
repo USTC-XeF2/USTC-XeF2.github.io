@@ -13,7 +13,10 @@ if (!post.value) {
   });
 }
 
-useSeoMeta(post.value.seo || {});
+useSeoMeta({
+  title: `${post.value.title} | XeF2`,
+  description: post.value.description,
+});
 </script>
 
 <template>

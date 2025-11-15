@@ -50,12 +50,12 @@ const resources = [
               </p>
 
               <div class="w-full space-y-3 text-sm">
-                <div class="flex items-center gap-2 text-toned">
+                <div class="flex items-center justify-center gap-2 text-toned">
                   <UIcon name="i-heroicons-map-pin" class="w-4 h-4" />
                   <span>Hefei, China</span>
                 </div>
 
-                <div class="flex items-center gap-2 text-toned">
+                <div class="flex items-center justify-center gap-2 text-toned">
                   <UIcon name="i-heroicons-envelope" class="w-4 h-4" />
                   <a href="mailto:contact@xef2.top" class="hover:text-primary">
                     contact@xef2.top
@@ -78,7 +78,7 @@ const resources = [
             欢迎来到我的个人主页！我是一名物理学专业的学生，同时辅修计算机科学。
           </p>
           <p>
-            在学习的同时，我也在不断探索编程的世界。通过结合物理与计算机两个学科的知识，我开发了一些实用的工具和应用，希望能为学习和生活带来便利。
+            在学习的同时，我也在不断探索编程的世界。通过结合多个领域的知识，我开发了一些实用的工具和应用，希望能为学习和生活带来便利。
           </p>
           <p>
             我乐于分享自己的学习经验和心得。如果你对我的项目或资料感兴趣，欢迎随时交流！

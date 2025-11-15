@@ -25,6 +25,10 @@ const toggleLocale = () => {
 <template>
   <UHeader :title="$t('title')" :to="localePath('index')">
     <UNavigationMenu :items="pages" />
+    <template #body>
+      <UNavigationMenu :items="pages" orientation="vertical" />
+    </template>
+
     <template #right>
       <UButton
         icon="i-heroicons-language"

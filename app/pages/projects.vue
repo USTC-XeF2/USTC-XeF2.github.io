@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: `${$t("projects")} | XeF2`,
+});
+
 const projects = ref([
   {
     name: "XeF4",

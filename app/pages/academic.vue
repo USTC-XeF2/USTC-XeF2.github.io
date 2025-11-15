@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: `${$t("academic")} | XeF2`,
+});
+
 const reports = [
   {
     title: "单摆法测重力加速度",

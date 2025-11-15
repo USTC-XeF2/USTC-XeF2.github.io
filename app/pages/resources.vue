@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: `${$t("resources")} | XeF2`,
+});
+
 const resources = [
   {
     category: "resources_category_course_materials",

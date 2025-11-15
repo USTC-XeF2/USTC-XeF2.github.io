@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: `${$t("blog")} | XeF2`,
+});
+
 const { data: posts } = await useAsyncData(() =>
   queryCollection("blog").order("date", "DESC").all(),
 );
