@@ -9,7 +9,7 @@ const { data: posts } = await useAsyncData(() =>
 </script>
 
 <template>
-  <UContainer class="mt-8">
+  <UContainer class="mt-16">
     <UBlogPosts orientation="vertical" :posts="posts">
       <UBlogPost
         v-for="(post, index) in posts"
