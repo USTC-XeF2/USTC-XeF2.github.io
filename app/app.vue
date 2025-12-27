@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import { en, zh_cn } from "@nuxt/ui/locale";
 
-const { locale } = useI18n();
+const i18nHead = useLocaleHead();
+useHead(() => i18nHead.value);
+
+const { t, locale } = useI18n();
+
+useSeoMeta({
+  description: t("site_description"),
+});
 
 const locales = {
   en,
@@ -13,7 +20,7 @@ const locales = {
   <UApp :locale="locales[locale]">
     <AppHeader />
 
-    <UMain>
+    <UMain as="main">
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>

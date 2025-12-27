@@ -10,14 +10,17 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   devtools: { enabled: true },
   i18n: {
+    baseUrl: "https://xef2.top",
     defaultLocale: "zh-CN",
     locales: [
       {
         code: "en",
+        language: "en",
         file: "en.json",
       },
       {
         code: "zh-CN",
+        language: "zh",
         file: "zh.json",
       },
     ],

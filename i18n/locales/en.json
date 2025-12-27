@@ -1,12 +1,17 @@
 {
+  "site_description": "XeF2's homepage, sharing knowledge and life experiences.",
+
   "title": "XeF2's Homepage",
   "home": "Home",
   "blog": "Blog",
   "academic": "Academic",
   "projects": "Projects",
   "resources": "Resources",
+  "toggle_locale": "Switch to 简体中文 language",
+
   "go_home": "Back to home",
   "post_not_found": "Blog post not found",
+
   "resources_category_course_materials": "Course Materials",
   "resources_category_campus_websites": "Campus Websites",
   "resources_category_useful_tools": "Useful Tools"

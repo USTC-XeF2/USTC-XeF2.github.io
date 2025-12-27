@@ -1,15 +1,4 @@
 <script setup lang="ts">
-const infoCardRef = useTemplateRef("infoCard");
-const isMobile = ref(false);
-
-onMounted(() => {
-  const checkMobile = () => {
-    isMobile.value = window.innerWidth < 1024;
-  };
-  checkMobile();
-  window.addEventListener("resize", checkMobile);
-});
-
 const interests = ["Python", "TypeScript", "Web 开发", "AI 应用"];
 
 const resources = [
@@ -33,43 +22,12 @@ const resources = [
   >
     <template #left>
       <UPageAside>
-        <Teleport defer :to="infoCardRef" :disabled="!isMobile">
-          <UCard class="lg:ml-8">
-            <div class="flex flex-col items-center">
-              <UAvatar
-                src="/favicon.jpg"
-                text="Xe"
-                class="mb-4 size-32 hover:rotate-360 duration-400"
-              />
-
-              <h1 class="text-2xl font-bold mb-1">XeF2</h1>
-              <p class="text-muted mb-4">@USTC-XeF2</p>
-
-              <p class="text-sm text-toned text-center mb-4">
-                Physics Student | USTC
-              </p>
-
-              <div class="w-full space-y-3 text-sm">
-                <div class="flex items-center justify-center gap-2 text-toned">
-                  <UIcon name="i-heroicons-map-pin" class="w-4 h-4" />
-                  <span>Hefei, China</span>
-                </div>
-
-                <div class="flex items-center justify-center gap-2 text-toned">
-                  <UIcon name="i-heroicons-envelope" class="w-4 h-4" />
-                  <a href="mailto:contact@xef2.top" class="hover:text-primary">
-                    contact@xef2.top
-                  </a>
-                </div>
-              </div>
-            </div>
-          </UCard>
-        </Teleport>
+        <InfoCard class="hidden lg:block lg:ml-8" />
       </UPageAside>
     </template>
 
     <UPageBody class="max-lg:mx-4 mr-8">
-      <div ref="infoCard" class="lg:hidden"></div>
+      <InfoCard class="lg:hidden" />
 
       <!-- 个人简介 -->
       <UCard>
@@ -138,9 +96,9 @@ const resources = [
               :key="resource.title"
               class="p-3 bg-muted/50 rounded-lg"
             >
-              <h4 class="font-semibold mb-1">
+              <h3 class="font-semibold mb-1">
                 {{ resource.title }}
-              </h4>
+              </h3>
               <p class="text-sm text-muted">
                 {{ resource.description }}
               </p>

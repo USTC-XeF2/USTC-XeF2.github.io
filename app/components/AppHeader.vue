@@ -34,6 +34,7 @@ const toggleLocale = () => {
         icon="i-heroicons-language"
         color="neutral"
         variant="ghost"
+        :aria-label="$t('toggle_locale')"
         @click="toggleLocale"
       />
       <UColorModeButton />
