@@ -2,3 +2,7 @@
 @import "@nuxt/ui";
 
 @source "../../../content/**/*";
+
+:root {
+  --ui-container: var(--container-6xl);
+}
