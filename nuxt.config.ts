@@ -26,5 +26,15 @@ export default defineNuxtConfig({
     ],
   },
   modules: ["@nuxt/ui", "@nuxt/content", "@nuxt/eslint", "@nuxtjs/i18n"],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"],
+    },
+  },
+  routeRules: {
+    "/blog/**": { prerender: false },
+    "/en/blog/**": { prerender: false },
+  },
   ui: { fonts: false },
 });
