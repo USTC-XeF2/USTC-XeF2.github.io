@@ -18,6 +18,8 @@ const locales = {
 
 <template>
   <UApp :locale="locales[locale]">
+    <NuxtLoadingIndicator color="var(--ui-primary)" :height="2" />
+
     <AppHeader />
 
     <UMain as="main">
